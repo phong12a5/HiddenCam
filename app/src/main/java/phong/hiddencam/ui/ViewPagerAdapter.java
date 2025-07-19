@@ -19,6 +19,6 @@ public class ViewPagerAdapter extends FragmentStateAdapter {
 
     @Override
     public int getItemCount() {
-        return 4; // Number of fragments
+        return 1; // Number of fragments
     }
 }

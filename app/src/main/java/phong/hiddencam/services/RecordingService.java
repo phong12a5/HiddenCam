@@ -46,8 +46,8 @@ import androidx.core.app.ActivityCompat;
 import androidx.core.app.NotificationCompat;
 import androidx.core.app.NotificationManagerCompat;
 
-import com.arthenica.ffmpegkit.FFmpegKit;
-import com.arthenica.ffmpegkit.ReturnCode;
+//import com.arthenica.ffmpegkit.FFmpegKit;
+//import com.arthenica.ffmpegkit.ReturnCode;
 import phong.hiddencam.CameraType;
 import phong.hiddencam.Constants;
 import phong.hiddencam.MainActivity;
@@ -532,7 +532,9 @@ public class RecordingService extends Service {
 
         cancelNotification();
 
+        /*
         processLatestVideoFileWithWatermark();
+         */
 
         broadcastOnRecordingStopped();
 
@@ -543,6 +545,7 @@ public class RecordingService extends Service {
         }
     }
 
+    /*
     private void processLatestVideoFileWithWatermark() {
         isProcessingWatermark = true;
         File latestVideoFile = getLatestVideoFile();
@@ -606,6 +609,7 @@ public class RecordingService extends Service {
 
         executeFFmpegCommand(ffmpegCommand);
     }
+     */
 
     private int getFontSizeBasedOnBitrate() {
         int fontSize;
@@ -629,6 +633,7 @@ public class RecordingService extends Service {
         return videoBitrate;
     }
 
+    /*
     private void executeFFmpegCommand(String ffmpegCommand) {
         Log.d(TAG, "FFmpeg Command: " + ffmpegCommand);
         FFmpegKit.executeAsync(ffmpegCommand, session -> {
@@ -651,6 +656,7 @@ public class RecordingService extends Service {
             }
         });
     }
+     */
 
     private void startMonitoring() {
         final long CHECK_INTERVAL_MS = 1000; // 1 second
