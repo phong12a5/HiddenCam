@@ -1,0 +1,9 @@
+<resources>
+    <style name="Base.Theme.HiddenCam" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:fontFamily">@font/ubuntu_regular</item>
+        <item name="android:statusBarColor">@color/gray</item>
+    </style>
+
+
+    <style name="Theme.HiddenCam" parent="Base.Theme.HiddenCam" />
+</resources>
